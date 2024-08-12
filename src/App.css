@@ -1,0 +1,595 @@
+/* ALL PAGES -- order: general elements, classes, IDs, fonts, events */
+
+/* general elements */
+header {
+  background-color: white;
+  font-family: "Monaco", monospace;
+  color: black;
+  margin: 0;
+  width: 100%;
+  height: 4.5%;
+}
+
+header div {
+  transform: translateY(1vh);
+}
+
+footer {
+  background-color: white;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding-top: .25rem;
+  padding-bottom: .25rem;
+  margin: 0;
+  width: 100%;
+  height: 4.5%;
+}
+
+canvas {
+  position: absolute;
+  display: none;
+}
+
+/* classes */
+.routeContainer {
+  margin-top: 1%;
+  background-image: linear-gradient(to right, #000000, #94A3B8, #D97706);
+  width: 100%;
+  height: 91%;
+  margin: 0%;
+  padding-left: max(10.5%);
+  padding-right: max(10.5%);
+}
+
+/* ids */
+
+#footerText {
+  font-family: "American Typewriter", serif;
+  font-size: 1.25rem;
+  color: gray;
+}
+
+/* fonts */
+.robotoMonoFont {
+  font-family: 'Roboto Mono', monospace;
+}
+
+.monacoFontBlack {
+  font-family: "Monaco", monospace;
+  color: black;
+  transform: translateY(-20%);
+}
+.monacoFontWhite {
+  font-family: "Monaco", monospace;
+  color: white;
+  transform: translateY(-10%);
+}
+
+.americanTypewriterFont {
+  font-family: "American Typewriter", serif;
+  /* do not add a color -- it'll change all the other texts using this*/
+}
+
+/* HOME PAGE -- order: general elements, classes, IDs, events */
+
+/* classes */
+
+.goldBoxHeadHome{
+  background-color: #DDA74F;
+  width: 100%;
+  padding: 15%;
+  margin-top: 0;
+
+}
+.goldBoxLarge{
+  background-color: #DDA74F;
+  width: 100%;
+  padding: 20%;
+}
+
+.uploadBUTTONhome {
+  background-color: #DDA74F;
+  width: 50%;
+  padding: 20%;
+  border-radius: 60%;
+  border-color: #DDA74F;
+  border-width: 2%;
+  margin-left: -10%;
+  border-radius: 80% 0 55% 50% / 55% 0 80% 50%;
+  transform: rotate(-45deg) translateY(-400%);
+}
+
+.uploadBUTTONhome:hover {
+  background-color: white;
+  border-color: #DDA74F;
+}
+
+.homeTitle {
+  font-size: 560%;
+  transform: translateY(-50%);
+  text-align: left;
+}
+
+.homeSubTitle {
+  font-size: 30px;
+  text-align: center;
+}
+
+.howProductWorksIMG {
+  background-color: #DDA74F;
+  width: 60%;
+  transform: translateX(30%);
+  margin: 5%;
+}
+
+.drizzleIMG {
+  background-color: black;
+  width: 100%;
+}
+
+.splashIMG {
+  background-color: black;
+  width: 120%;
+  position: absolute;
+  transform: translateY(80%) translateX(-60%);
+}
+
+.uploadDropIMG {
+  background-color: black;
+  width: 40%;
+  position: absolute;
+  transform: translateY(-100%) translateX(-140%);
+}
+
+.aboutDropIMG {
+  background-color: black;
+  width: 40%;
+  position: absolute;
+  transform: translateY(-180%) translateX(-30%);
+}
+
+.typewriteAnimationHEAD {
+  overflow: hidden;
+  border-right: .15em solid black;
+  white-space: nowrap;
+  width: 0;
+  animation: 
+    typingA 7s steps(30) infinite,
+    /* animation-iteration-count: infinite; */
+    blinkA 1s infinite;
+    animation-fill-mode: forwards
+}
+
+.typewriteAnimationSUBHEAD {
+  overflow: hidden;
+  border-right: .15em solid black;
+  white-space: nowrap;
+  width: 0;
+  animation:
+    typingB 5s steps(50, end) forwards;
+    animation-iteration-count: infinite;
+}
+
+/* ids */
+#uploadTEXThome {
+  font-family: "American Typewriter", serif;
+  font-size: 500%;
+  color: white;
+  transform: rotate(45deg) translateX(-60%);
+}
+
+
+#scrollTrigger {
+  margin: 0px;
+}
+
+#blackBackgroundHome {
+  background-color: black;
+  width: 100%;
+  padding: 60%;
+}
+
+/* events */
+
+@keyframes typingA {
+  /* from {width: 0}
+  to {width: 100%} */
+  0% { width:0 }
+  25% { width: 70% }
+  48% { width: 100% }
+  50% { width: 100% }
+  55% { width: 100% }
+  75% { width: 70%; }
+  85% { width: 30%; }
+  100% { width: 0; }
+}
+
+@keyframes blinkA {
+  from {border-color: transparent}
+  to {border-color: black;}
+}
+
+@keyframes typingB {
+  from {width: 0%}
+  to {width: 35%}
+}
+
+/* ABOUT PAGE -- order: general elements, classes, IDs, events */
+
+/* classes */
+.homeTitle {
+  font-size: 6vw;
+  transform: translateY(-50%);
+  text-align: left;
+}
+
+.homeSubTitle {
+  font-size: 3vw;
+  text-align: center;
+}
+
+.productInfoTEXThome {
+  font-family: "American Typewriter", serif;
+  font-size: 300%;
+  color: white;
+  text-align: center;
+  
+}
+.idCard {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 20px;
+  
+  width: 12vw;
+  height: 32vh;
+
+  text-align: center;
+  transition: 2s ease;
+}
+
+#cardContainer {
+  height: 70vh;
+}
+
+.userPic {
+  user-select: none;
+  transform: translate(50%);
+  max-width: 50%;
+  border-radius: 300px;
+  transition: 1.5s ease;
+}
+
+.userName {
+  user-select: none;
+  font-size: 1.5vw;
+  font-weight: bold;
+  margin: 0;
+}
+
+.userRole {
+  user-select: none;
+  color: black;
+  transition: 1.0s ease;
+  opacity: 0;
+  font-size: 1vw;
+}
+
+.userDesc {
+  cursor: default;
+  user-select: none;
+  color: black;
+  font-style: italic;
+  opacity: 0;
+  font-size: 0.6vw;
+  transition: 2.0s ease;
+}
+
+.idCard:hover .userRole {
+  opacity: 100;
+  transition: 2.0s ease;
+}
+
+.idCard:hover .userDesc {
+  opacity: 100;
+  transition: 2.0s ease;
+}
+
+.idCard:hover .userPic {
+  border-radius: 10px;
+  transition: 0.5s ease;
+}
+
+/* ids */
+#aboutHeader {
+  color: white;
+  font-size: 2vw;
+  user-select: none;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+#footerText {
+  font-family: "American Typewriter", serif;
+  font-size: 25px;
+  color: gray;
+  text-align: center;
+}
+
+/* PRODUCT PAGE -- order: general elements, classes, IDs, events */
+
+
+/* classes */
+
+/* ID BOXES */
+
+#blackBackgroundHome {
+  background-color: black;
+  width: 100%;
+  padding: 50%;
+}
+
+
+/* OTHER */
+
+.typewriteAnimationHEAD {
+  overflow: hidden;
+  border-right: .15em solid black;
+  white-space: nowrap;
+  width: 0;
+  animation: 
+    typingA 7s steps(30) infinite,
+    /* animation-iteration-count: infinite; */
+    blinkA 1s infinite;
+    animation-fill-mode: forwards
+}
+
+@keyframes typingA {
+  /* from {width: 0}
+  to {width: 100%} */
+  0% { width:0 }
+  25% { width: 70% }
+  48% { width: 100% }
+  50% { width: 100% }
+  55% { width: 100% }
+  75% { width: 70%; }
+  85% { width: 30%; }
+  100% { width: 0; }
+}
+
+@keyframes blinkA {
+  from {border-color: transparent}
+  to {border-color: black;}
+}
+
+.typewriteAnimationSUBHEAD {
+  overflow: hidden;
+  border-right: .15em solid black;
+  white-space: nowrap;
+  width: 0;
+  animation:
+    typingB 5s steps(50, end) forwards;
+    animation-iteration-count: infinite;
+}
+
+@keyframes typingB {
+  from {width: 0%}
+  to {width: 35%}
+}
+
+.drizzleIMG {
+  background-color: black;
+  width: 100%;
+}
+
+.splashIMG {
+  background-color: black;
+  width: 120%;
+  position: absolute;
+  transform: translateY(70%) translateX(-50%);
+}
+
+.uploadDropIMG {
+  background-color: black;
+  width: 40%;
+  position: absolute;
+  transform: translateY(-90%) translateX(-110%);
+}
+
+.aboutDropIMG {
+  background-color: black;
+  width: 40%;
+  position: absolute;
+  transform: translateY(-160%) translateX(-0%);
+}
+
+.sumFunc:hover {
+  background-color: #C5C5C5;
+}
+
+/* archived -- in no particular order
+
+#priceTitle {
+  font-size: 50px;
+  font-weight: 2em bold;
+  transform: translateY(-30%);
+  text-align: center;
+}
+
+#priceAmt {
+  font-size: 50px;
+  font-weight: 2em bold;
+  transform: translateY(-30%);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#priceAmt a {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#priceDesc {
+  font-size: 20px;
+  transform: translateY(-20%);
+  text-align: center;
+}
+
+#priceProCons {
+  margin-top: 20px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.priceBox {
+  padding: 70px;
+  margin-top: 80px;
+  border: 2px solid #DDA74F;
+  border-radius: 10px;
+  color: black;
+  width: 100%;
+  height: 100%;
+  transform: translateY(-30%);
+}
+
+.priceHeadBox {
+  background-color: #DDA74F;
+  width: 100%;
+  padding: 200px;
+}
+
+.aboutBUTTONhome {
+  background-color: #DDA74F;
+  width: 29%;
+  padding: 12%;
+  border-radius: 60%;
+  border-color: #DDA74F;
+  border-width: 5px;
+  margin-left: 50%;
+  border-radius: 80% 0 55% 50% / 55% 0 80% 50%;
+  transform: translateY(-150%) rotate(-45deg);
+}
+.aboutBUTTONhome:hover {
+  background-color: white;
+  border-color: #DDA74F;
+}
+
+.pricingBUTTONhome {
+  background-color: #DDA74F;
+  width: 29%;
+  padding: 12%;
+  border-radius: 60%;
+  border-color: #DDA74F;
+  border-width: 5px;
+  margin-left: 60%;
+  border-radius: 80% 0 55% 50% / 55% 0 80% 50%;
+  transform: translateY(-80%) rotate(-45deg);
+}
+.pricingBUTTONhome:hover {
+  background-color: white;
+  border-color: #DDA74F;
+}
+
+#aboutpriceTEXThome {
+  font-family: "American Typewriter", serif;
+  font-size: 300%;
+  color: black;
+  transform: rotate(45deg) translateX(-60%);
+}
+
+#productInfoTEXThome {
+  font-family: "American Typewriter", serif;
+  font-size: 300%;
+  color: white;
+  text-align: center;
+  transform: translateY(-400%);
+}
+
+.priceDropIMG {
+  background-color: black;
+  width: 30%;
+  position: absolute;
+  transform: translateY(-40%) translateX(30%);
+}
+
+
+#scrollTrigger {
+  margin: 0px;
+}
+
+*/
+
+.tryButtonHome {
+  display: inline-block;
+  font-family: 'Roboto Mono', monospace;
+  background-color: white;
+  border-radius: 15px;
+  border: 5% white;
+  color: #DDA74F;
+  text-align: center;
+  font-size: 200%;
+  margin-top:20px;
+  padding: 2%;
+  width: 30%;
+  transition: all 0.5s;
+  cursor: pointer;
+  transform: translateX(120%);
+  /* translateY(170%) */
+}
+
+.tryButtonHome span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.tryButtonHome span:after {
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s;
+}
+.tryButtonHome:hover {
+  background-color: black;
+  color: white;
+}
+
+.priceHeaderTitle {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 70px;
+  font-weight: 2em bold;
+  text-align: center;
+}
+
+.priceFont {
+  font-family: "Monaco", monospace;
+  color: black;
+}
+
+.bradleyHandFont {
+  font-family: "Bradley", cursive;
+  font-size: 100px;
+}
+
+.luminariFont {
+  font-family: "Luminari", fantasy;
+}
+
+.rounded-button {
+  width: 60px;
+  height: 60px;
+  background: #36342f;
+  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 50%;
+  border: none;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.rounded-button:hover {
+  background: #848686;
+}
+
